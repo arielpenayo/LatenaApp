@@ -1,0 +1,693 @@
+<!doctype html>
+
+<!-- 
+320 and Up boilerplate extension
+Andy Clarke http://about.me/malarkey
+Keith Clark http://twitter.com/keithclarkcouk
+Version: 2
+URL: http://stuffandnonsense.co.uk/projects/320andup/
+License: http://creativecommons.org/licenses/MIT
+-->
+
+<!--[if IEMobile 7]><html class="no-js iem7 oldie"><![endif]-->
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+
+<title>HelloAdmin</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/colors/color1/color.css">
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/grid.css">
+<link rel="stylesheet" media="print" href="css/print.css">
+<link rel="stylesheet" href="css/fixed.css">
+
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<script src="js/libs/selectivizr-min.js"></script>
+<![endif]-->
+
+<!-- JavaScript -->
+<script src="js/libs/modernizr-2.0.6.min.js"></script>
+
+<!-- For iPhone 4 -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
+<!-- For iPad 1-->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
+<!-- For iPhone 3G, iPod Touch and Android -->
+<link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
+<!-- For Nokia -->
+<link rel="shortcut icon" href="img/l/apple-touch-icon.png">
+<!-- For everything else -->
+<link rel="shortcut icon" href="/favicon.ico">
+
+<!--iOS. Delete if not required -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-startup-image" href="img/splash.png">
+
+<!--Microsoft. Delete if not required -->
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!--[if lt IE 7 ]><script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script><script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script><![endif]-->
+
+<!-- http://t.co/y1jPVnT -->
+<link rel="canonical" href="/">
+</head>
+
+<body class="clearfix">
+
+<header>
+	<section class="container_12"><!-- / Using 960's grid container_12 to standartize paddings/margins -->
+			<div class="upper clearfix">
+				<!-- / Logo -->
+				<a href="dashboard.html" class="logo mt20"><img src="img/hdr_logo.png" alt="" /></a>
+				<!-- / End logo -->
+
+				<!-- / Language and search -->
+				<div class="r top">
+					<!-- / Language  -->
+					<ul class="lang sf_menu clearfix"><!-- / Please note that these LI elements are right floated to keep the fluid layout consistent  -->
+						<li class="last"><a href="#"><img src="img/icons/question.png" alt="" /></a></li>
+						<li><a href="#">English</a>
+							<ul>
+								<li><a href="#">German</a></li>
+								<li class="last"><a href="#">Bulgarian</a></li>
+							</ul>
+						</li>
+					</ul>
+					<!-- / End language  -->
+					<!-- / Search  -->
+					<div class="search">
+					<form action="search.php">
+						<input type="text" placeholder="Search database..." >
+						<button></button>
+					</form>
+					</div>
+					<!-- / End search input -->
+				</div>
+				<div class="clear">&nbsp;</div>
+				<!-- / End slanguage and search -->
+				
+				<!-- / Userbar - separated from the main nav to fall back in mobile design. -->
+				<div class="r usermenu">
+					<ul class="sf_menu clearfix">
+						<li class="last"><a href="#" class="messages"><img src="img/icons/helloadmin/messages.png" alt="" /><sup>5</sup></a></li>
+						<li><a href="#"><img src="img/icons/helloadmin/user.png" alt="" /><span>Username</span></a>
+							<ul>
+								<li><a href="#">Preferences</a></li>
+								<li><a href="#">Your account</a></li>
+								<li class="last"><a href="#">Other options</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- / End userbar -->
+
+				<!-- / Main navigation-->
+				<nav class="mainnav l">
+					<ul id="mainnav" class="sf_menu clearfix">
+						<li><a href="dashboard.html" title="Link title here"><img src="img/icons/helloadmin/dashboard.png" alt="" /><span>Dashboard</span></a></li>
+						<li><a href="#" title="Link title here"><img src="img/icons/helloadmin/layouts.png" alt="" /><span>Layouts</span></a>
+							<ul>
+								<li><a href="layout1.html">2 columns – 1:2 </a></li>
+								<li><a href="layout2.html">2 columns – 2:1 </a></li>
+								<li><a href="layout3.html">1 column </a></li>
+								<li><a href="layout4.html">Left menu + 1 column</a></li>
+								<li><a href="layout5.html">1 column + Left menu</a></li>
+								<li><a href="layout6.html">Left menu + 3 boxes </a></li>
+								<li class="last"><a href="layout7.html">4 boxes </a></li>
+							</ul>
+						</li>
+						<li><a href="#" title="Link title here"><img src="img/icons/helloadmin/modules.png" alt="" /><span>Modules</span></a>
+							<ul>
+								<li><a href="gallery.html">Gallery</a></li>
+								<li><a href="calendar.html">Calendar</a></li>
+								<li><a href="charts.html">Charts</a></li>
+								<li><a href="filemanager.html">File Manager</a></li>
+								<li class="last"><a href="contacts.html">Contacts</a></li>
+							</ul>
+						</li>
+						<li><a href="#" title="Link title here"><img src="img/icons/helloadmin/features.png" alt="" /><span>Features</span></a>
+							<ul>
+								<li><a href="tables.html">Tables</a></li>
+								<li><a href="forms.html">Forms</a></li>
+								<li><a href="icons.html">Icons, Buttons, Breadcrumbs</a></li>
+								<li><a href="interface.html">Interface elements</a></li>
+								<li><a href="typography.html">Typography</a></li>
+								<li class="last"><a href="#">Error pages</a>
+									<ul>
+										<li><a href="error1.html">403</a></li>
+										<li><a href="error2.html">404</a></li>
+										<li><a href="error3.html">405</a></li>
+										<li><a href="error4.html">500</a></li>
+										<li class="last"><a href="error5.html">503</a></li>
+									</ul>
+								</li>
+							</ul>	
+						</li>
+					</ul>
+				</nav>
+				<!-- / End main navigation-->
+			</div>
+	</section>
+</header>
+
+<!-- / Start main -->
+<div id="main" class="container_12 clearfix" role="main">
+
+	<!-- / Breadcrumbs -->
+	<div id="breadCrumb" class="breadCrumb jBreadcrumb module">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Settings</a>
+                        </li>
+                        <li>
+                            <a href="#">Media</a>
+                        </li>
+                        <li>
+                            <a href="#">Manage Images</a>
+                        </li>
+                        <li>
+                            <a href="#">Category: Staff Photos</a>
+                        </li>
+                        <li>
+                            Edit Photo: Single Photo Name
+                        </li>
+                    </ul>
+    </div>
+	<!-- / Box -->
+	<div class="box threethirds">
+		<div class="boxheading clearfix"><h3>Icons &amp; Buttons</h3><a class="move"></a></div>
+		<section class="clearfix">
+			
+			<div class="grid_5">
+			<h4>Icons 32x32</h4>
+			<img src="img/icons/helloadminpack/32x32/01.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/32x32/02.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/32x32/03.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/32x32/04.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/32x32/05.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/32x32/06.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/32x32/07.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/32x32/08.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/32x32/09.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/32x32/10.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/32x32/11.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/32x32/12.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/32x32/13.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/32x32/14.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/32x32/15.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/32x32/16.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/32x32/17.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/32x32/18.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/32x32/19.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/32x32/20.png" class="mrb15" alt="" />
+			<code class="hint">regular img</code>
+			<h4 class="mt15">Icons 16x16</h4>
+			<img src="img/icons/helloadminpack/16x16/01.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/16x16/02.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/16x16/03.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/16x16/04.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/16x16/05.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/16x16/06.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/16x16/07.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/16x16/08.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/16x16/09.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/16x16/10.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/16x16/11.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/16x16/12.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/16x16/13.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/16x16/14.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/16x16/15.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/16x16/16.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/16x16/17.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/16x16/18.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/16x16/19.png" class="mrb15" alt="" /><img src="img/icons/helloadminpack/16x16/20.png" class="mrb15" alt="" />
+			</div>
+
+
+			<div class="grid_7">
+			<h4 class="">Icons only button 32x32</h4>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/32x32/09.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/32x32/10.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/32x32/11.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/32x32/12.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/32x32/13.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/32x32/14.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/32x32/15.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/32x32/16.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/32x32/01.png" alt="" /></a>
+			<code class="hint">a class="btn_icon"</code>
+			<h4 class="mt15">Icons only button 16x16</h4>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/16x16/09.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/16x16/10.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/16x16/11.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/16x16/12.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/16x16/13.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/16x16/14.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/16x16/15.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/16x16/16.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/16x16/01.png" alt="" /></a>
+			</div>
+
+			<div class="clear">&nbsp;</div>
+
+			<h4 class="mt15">Icons with text buttons</h4>
+
+			<a href="#" class="btn_icon textright mrb15"><img src="img/icons/helloadminpack/32x32/01.png" alt="" />
+			<span class="l"><span class="title">Hello admin!</span><span class="subtitle">John Doe</span></span>
+			</a>
+			<a href="#" class="btn_icon textright mrb15"><img src="img/icons/helloadminpack/32x32/02.png" alt="" />
+			<span class="l"><span class="title">Hello admin!</span><span class="subtitle">John Doe</span></span>
+			</a>
+			<a href="#" class="btn_icon textright mrb15"><img src="img/icons/helloadminpack/32x32/03.png" alt="" />
+			<span class="l"><span class="title">Hello admin!</span><span class="subtitle">John Doe</span></span>
+			</a>
+			<a href="#" class="btn_icon textright mrb15"><img src="img/icons/helloadminpack/32x32/04.png" alt="" />
+			<span class="l"><span class="title">Hello admin!</span><span class="subtitle">John Doe</span></span>
+			</a>
+
+			<code class="hint">a class="btn_icon textright" and wrap the title in span.title, the subtitle in span.subtitle</code>
+
+			<h4 class="mt15">Icons with single text buttons</h4>
+
+			<a href="#" class="btn_icon textright mrb15"><img src="img/icons/helloadminpack/16x16/05.png" alt="" width="16"/>
+			<span class="l title">Hello admin!</span>
+			</a>
+			<a href="#" class="btn_icon textright mrb15"><img src="img/icons/helloadminpack/16x16/06.png" alt="" width="16"/>
+			<span class="l title">Hello admin!</span>
+			</a>
+			<a href="#" class="btn_icon textright mrb15"><img src="img/icons/helloadminpack/16x16/07.png" alt="" width="16"/>
+			<span class="l title">Hello admin!</span>
+			</a>
+			<a href="#" class="btn_icon textright mrb15"><img src="img/icons/helloadminpack/16x16/08.png" alt="" width="16"/>
+			<span class="l title">Hello admin!</span>
+			</a>
+			<code class="hint mt15">a class="btn_icon textright" and wrap the text in span.l.title</code>
+
+			<h4 class="mt15">Icons with text square buttons</h4>
+
+			<a href="#" class="btn_icon square mrb15"><img src="img/icons/helloadminpack/32x32/09.png" alt="" /><span>Hello admin!</span></a>
+			<a href="#" class="btn_icon square mrb15"><img src="img/icons/helloadminpack/32x32/10.png" alt="" /><span>Hello admin!</span></a>
+			<a href="#" class="btn_icon square mrb15"><img src="img/icons/helloadminpack/32x32/11.png" alt="" /><span>Hello admin!</span></a>
+			<a href="#" class="btn_icon square mrb15"><img src="img/icons/helloadminpack/32x32/12.png" alt="" /><span>Hello admin!</span></a>
+			<a href="#" class="btn_icon square mrb15"><img src="img/icons/helloadminpack/32x32/13.png" alt="" /><span>Hello admin!</span></a>
+			<code class="hint mt15">a class="btn_icon square" and wrap the text in a span</code>
+
+			<h4 class="mt15">Small buttons (and jQuery UI default icons)</h4>
+			
+			<a href="#" class="btn small mrb5"><span class="ui-icon ui-icon-carat-1-n"></span></a><a href="#" class="btn small  mrb5"><span class="ui-icon ui-icon-carat-1-ne"></span></a><a href="#" class="btn small  mrb5"><span class="ui-icon ui-icon-carat-1-e"></span></a><a href="#" class="btn small  mrb5"><span class="ui-icon ui-icon-carat-1-se"></span></a><a href="#" class="btn small  mrb5"><span class="ui-icon ui-icon-carat-1-s"></span></a><a href="#" class="btn small  mrb5"><span class="ui-icon ui-icon-carat-1-sw"></span></a><a href="#" class="btn small  mrb5"><span class="ui-icon ui-icon-carat-1-w"></span></a><a href="#" class="btn small  mrb5"><span class="ui-icon ui-icon-carat-1-nw"></span></a><a href="#" class="btn small  mrb5"><span class="ui-icon ui-icon-carat-2-n-s"></span></a><a href="#" class="btn small  mrb5"><span class="ui-icon ui-icon-carat-2-e-w"></span></a><a href="#" class="btn small  mrb5"><span class="ui-icon ui-icon-triangle-1-n"></span></a><a href="#" class="btn small  mrb5"><span class="ui-icon ui-icon-triangle-1-ne"></span></a><a href="#" class="btn small  mrb5"><span class="ui-icon ui-icon-triangle-1-e"></span></a><a href="#" class="btn small  mrb5"><span class="ui-icon ui-icon-triangle-1-se"></span></a><a href="#" class="btn small  mrb5"><span class="ui-icon ui-icon-triangle-1-s"></span></a><a href="#" class="btn small  mrb5"><span class="ui-icon ui-icon-triangle-1-sw"></span></a><a href="#" class="btn small  mrb5"><span class="ui-icon ui-icon-triangle-1-w"></span></a><a href="#" class="btn small  mrb5"><span class="ui-icon ui-icon-triangle-1-nw"></span></a><a href="#" class="btn small  mrb5"><span class="ui-icon ui-icon-triangle-2-n-s"></span></a><a href="#" class="btn small  mrb5"><span class="ui-icon ui-icon-triangle-2-e-w"></span></a><a href="#" class="btn small  mrb5"><span class="ui-icon ui-icon-arrow-1-n"></span></a><a href="#" class="btn small  mrb5"><span class="ui-icon ui-icon-arrow-1-ne"></span></a><a href="#" class="btn small  mrb5"><span class="ui-icon ui-icon-arrow-1-e"></span></a><a href="#" class="btn small  mrb5"><span class="ui-icon ui-icon-arrow-1-se"></span></a><a href="#" class="btn small  mrb5"><span class="ui-icon ui-icon-arrow-1-s"></span></a><a href="#" class="btn small  mrb5"><span class="ui-icon ui-icon-arrow-1-sw"></span></a><a href="#" class="btn small  mrb5"><span class="ui-icon ui-icon-arrow-1-w"></span></a>
+			<div class="clear">&nbsp;</div>
+			
+			<code class="mt15">See all of them here: <a href="http://jqueryui.com/themeroller/">http://jqueryui.com/themeroller/</a></code>
+
+			<h4 class="mt15">Other icons 16x16 (part of 2400 icons: <a href="http://www.fatcow.com/free-icons">http://www.fatcow.com/free-icons</a>)</h4>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/alarm_bell.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/align_right.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/american_express.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/apple_corp.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/apple_half.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/autos.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/backpack.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/blackboard_sum.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/building_delete.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/magic_wand_2.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/advertising.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/align_right.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/bookshelf.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/border_1d_around.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/cash_terminal.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/css.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/draw_line.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/draw_path.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/draw_points.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/draw_polygon.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/file_extension_asx.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/file_extension_chm.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/file_extension_xpi.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/filter.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/film_save.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/film_key.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/flag_bulgaria.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/info_rhombus.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/information.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/iphone.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/ipad.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/ipod.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/joystick.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/jeans.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/layer_command.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/linkedin.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/vimeo.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/linkbar.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/new.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/no_image.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/newspaper.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/panel.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/peacock.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/pencil.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/pictures.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/poo.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/popcorn.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/posterous.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/places.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/poker.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/preferences.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/question.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/radio_1.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/ruby.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/safe.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/santa.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/satellite.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/salver.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/scanner.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/select.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/shield.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/sitemap.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/small_car.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/small_tiles.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/skins.png" alt="" width="16"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/16x16/small_car.png" alt="" width="16"/></a>
+			<div class="clear">&nbsp;</div>
+			<code class="mt15">.btn with image</code>
+
+			<h4 class="mt15">Other icons 32x32 (part of 2400 icons: <a href="http://www.fatcow.com/free-icons">http://www.fatcow.com/free-icons</a>)</h4>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/alarm_bell.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/align_right.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/american_express.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/apple_corp.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/apple_half.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/autos.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/backpack.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/blackboard_sum.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/building_delete.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/magic_wand_2.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/advertising.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/align_right.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/bookshelf.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/border_1d_around.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/cash_terminal.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/css.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/draw_line.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/draw_path.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/draw_points.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/draw_polygon.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/file_extension_asx.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/file_extension_chm.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/file_extension_xpi.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/filter.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/film_save.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/film_key.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/flag_bulgaria.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/info_rhombus.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/information.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/iphone.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/ipad.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/ipod.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/joystick.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/jeans.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/layer_command.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/linkedin.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/vimeo.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/linkbar.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/new.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/no_image.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/newspaper.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/panel.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/peacock.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/pencil.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/pictures.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/poo.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/popcorn.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/posterous.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/places.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/poker.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/preferences.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/question.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/radio_1.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/ruby.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/safe.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/santa.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/satellite.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/salver.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/scanner.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/select.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/shield.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/sitemap.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/small_car.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/small_tiles.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/skins.png" alt="" width="32"/></a>
+			<a href="#" class="btn small mrb5"><img src="img/icons/fatcow-hosting-icons/32x32/small_car.png" alt="" width="32"/></a>
+			<div class="clear">&nbsp;</div>
+			<code class="mt15">.btn with image</code>
+
+			<h4 class="mt15">Buttons .btn</h4>
+			<a class="btn">default</a><a class="btn grey">default</a><a class="btn green mrb5">green</a><a class="btn red mrb5">red</a><a class="btn orange mrb5">orange</a><a class="btn yellow mrb5">yellow</a><a class="btn blue mrb5">blue</a>
+			<div class="clear">&nbsp;</div>
+			<code class="mt15">.btn, add following classes for colors: grey, gree, red, orange, yellow, blue</code>
+			<h4 class="mt15">Buttons .btn.middle</h4>
+			<a class="btn middle mrb5">default</a><a class="btn middle grey mrb5">default</a><a class="btn middle green mrb5">green</a><a class="btn middle red mrb5">red</a><a class="btn middle orange mrb5">orange</a><a class="btn middle yellow mrb5">yellow</a><a class="btn middle blue mrb5">blue</a>
+			<div class="clear">&nbsp;</div>
+			<code class="mt15">.btn.middle, add following classes for colors: grey, gree, red, orange, yellow, blue</code>
+			<h4 class="mt15">Buttons .btn small </h4>
+			<a class="btn small mrb5">default</a><a class="btn small grey mrb5">default</a><a class="btn small green mrb5">green</a><a class="btn small red mrb5">red</a><a class="btn small orange mrb5">orange</a><a class="btn small yellow mrb5">yellow</a><a class="btn small blue mrb5">blue</a>
+			<div class="clear">&nbsp;</div>
+			<code class="mt15">.btn.small, add following classes for colors: grey, gree, red, orange, yellow, blue</code>
+			<h4 class="mt15">Paging</h4>
+			<!-- / Paging -->
+			<div class="paging mt15 clearfix">
+				<div class="l"><a href="#">1</a><a href="#" class="active">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a><a href="#"></a><a href="#">7</a><a href="#">8</a><a href="#">9</a><a href="#">10</a></div>
+				<div class="r"><a href="#" class="next"></a><a href="#" class="prev"></a></div>
+			</div>
+			<!-- / End paging -->
+		</section>
+	</div>
+	<!-- / End box -->
+
+	<!-- Box -->
+	<div class="box threethirds">
+	<div class="boxheading clearfix"><h3>Breadcrumbs</h3><a class="move"></a></div>
+		<section class="clearfix">
+		<h4>Breadcrumbs variants (place them at the top before all boxes - see top of this page)</h4>
+	<!-- / Breadcrumbs -->
+	<div class="breadCrumb jBreadcrumb module">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Settings</a>
+                        </li>
+                        <li>
+                            <a href="#">Media</a>
+                        </li>
+                        <li>
+                            <a href="#">Manage Images</a>
+                        </li>
+                        <li>
+                            <a href="#">Category: Staff Photos</a>
+                        </li>
+                        <li>
+                            Edit Photo: Single Photo Name
+                        </li>
+                    </ul>
+    </div>
+    <div class="clear">&nbsp;</div>
+    <code class="mt15 hint">div breadCrumb jBreadcrumb</code>
+    <!-- / Breadcrumbs -->
+	<div class="breadCrumb two module mt15">
+                    <ul>
+                        <li class="first">
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Settings</a>
+                        </li>
+                        <li>
+                            <a href="#">Media and others</a>
+                        </li>
+                        <li>
+                            <a href="#">Manage Images</a>
+                        </li>
+                        <li>
+                            <a href="#">Category: Staff Photos</a>
+                        </li>
+                        <li class="last">
+                            Edit Photo: Single Photo Name
+                        </li>
+                    </ul>
+    </div>
+    <div class="clear">&nbsp;</div>
+    <code class="mt15 hint">div breadCrumb two</code>
+    <!-- / Breadcrumbs -->
+	<div class="breadCrumb three module mt15">
+                    <ul>
+                        <li class="first">
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Settings</a>
+                        </li>
+                        <li>
+                            <a href="#">Media</a>
+                        </li>
+                        <li>
+                            <a href="#">Manage Images</a>
+                        </li>
+                        <li>
+                            <a href="#">Category: Staff Photos</a>
+                        </li>
+                        <li class="last">
+                            Edit Photo: Single Photo Name
+                        </li>
+                    </ul>
+    </div>
+    <div class="clear">&nbsp;</div>
+    <code class="mt15 hint">div breadCrumb three</code>
+    <!-- / Breadcrumbs -->
+	<div class="breadCrumb four module mt15">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Settings</a>
+                        </li>
+                        <li>
+                            <a href="#">Media</a>
+                        </li>
+                        <li>
+                            <a href="#">Manage Images</a>
+                        </li>
+                        <li>
+                            <a href="#">Category: Staff Photos</a>
+                        </li>
+                        <li class="last">
+                            Edit Photo: Single Photo Name
+                        </li>
+                    </ul>
+    </div>
+    <div class="clear">&nbsp;</div>
+    <code class="mt15 hint">div breadCrumb four</code>
+    <!-- / Breadcrumbs -->
+	<div class="breadCrumb five module mt15">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Settings</a>
+                        </li>
+                        <li>
+                            <a href="#">Media</a>
+                        </li>
+                        <li>
+                            <a href="#">Manage Images</a>
+                        </li>
+                        <li>
+                            <a href="#">Category: Staff Photos</a>
+                        </li>
+                        <li class="last">
+                            Edit Photo: Single Photo Name
+                        </li>
+                    </ul>
+    </div>
+    <div class="clear">&nbsp;</div>
+    <code class="mt15 hint">div breadCrumb five</code>
+	</section>
+	</div>
+
+
+	
+</div>
+<!-- / End main -->
+
+<!-- / Footer -->
+<footer role="contentinfo" class="clearfix">
+	<section class="container_12"><!-- / Using 960's grid container_12 to standartize paddings/margins -->
+		<div class="lower clearfix">
+			<nav class="mainnav l">
+				<ul id="mainnavftr" class="clearfix">
+					<li><a href="dashboard.html" title="Link title here"><img src="img/icons/helloadmin/dashboard.png" alt="" /></a></li>
+					<li><a href="layout1.html" title="Link title here"><img src="img/icons/helloadmin/layouts.png" alt="" /></a></li>
+					<li><a href="gallery.html" title="Link title here"><img src="img/icons/helloadmin/modules.png" alt="" /></a></li>
+					<li><a href="tables.html" title="Link title here"><img src="img/icons/helloadmin/features.png" alt="" /></a></li>
+				</ul>
+			</nav>
+			<a href="#" id="top" class="top">top</a>
+		</div>
+		<div class="smallest">
+			<div class="l">
+				© Copyright 2010 Your Company Name
+			</div>
+			<div class="r">
+				© Copyright 2010 Your Company Name
+			</div>
+		</div>
+	</section>
+</footer>
+<!-- / End footer -->
+
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.ui.spinner.js"></script><!-- Loading the spinner before jqueryui, because it's officially part of jQuery UI 1.9 and not compatible with 1.8 -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.collapsible.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.tipsy.js"></script>
+<script type="text/javascript" src="js/plugins/autoresize.jquery.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.autotab-1.1b.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.uniform.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui.multiselect.js"></script>
+<script type='text/javascript' src='js/plugins/fullcalendar/fullcalendar.min.js'></script>
+<script type="text/javascript" src="js/plugins/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.jBreadCrumb.1.1.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.dataTables.js"></script>
+<script type="text/javascript" src="filemanager/js/elfinder.min.js"></script>
+
+<!-- These are for blueimp -->
+<script src="blueimp/tmpl.min.js"></script>
+<script src="blueimp/load-image.min.js"></script>
+<script src="blueimp/jquery.iframe-transport.js"></script>
+<script src="blueimp/jquery.fileupload.js"></script>
+<script src="blueimp/jquery.fileupload-ui.js"></script>
+<script src="blueimp/application.js"></script>
+<!-- The XDomainRequest Transport is included for cross-domain file deletion for IE >= 8 -->
+<script src="blueimp/jquery.xdr-transport.js"></script>
+<!-- End blueimp -->
+
+<!-- / Loading WYSIWYG Editor, load it only when needed -->
+<script src="js/plugins/jquery.wysiwyg.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/plugins/controls/default.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/plugins/controls/wysiwyg.table.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/plugins/controls/wysiwyg.image.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/plugins/controls/wysiwyg.link.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/plugins/controls/wysiwyg.cssWrap.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript" src="js/plugins/hoverIntent.js"></script>
+<script type="text/javascript" src="js/plugins/superfish.js"></script>
+
+<script src="js/plugins.js"></script>
+<script src="js/script.js"></script>
+<script src="js/mylibs/helper.js"></script>
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<script src="js/libs/imgsizer.js"></script>
+<![endif]-->
+
+<script>
+// iOS scale bug fix
+MBP.scaleFix();
+
+// Respond.js
+yepnope({
+	test : Modernizr.mq('(only all)'),
+	nope : ['js/libs/respond.min.js']
+});
+</script>
+
+<!-- http://mths.be/aab -->
+<script>
+var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
+(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<!-- This is the picker, remove it when you use this template -->
+<div class="colorswitcher"><a class="switchTo1" href="#"><img src="img/switcher/1.png"   alt="" /></a><a class="switchTo1-1" href="#"><img src="img/switcher/1.1.png"   alt="" /></a><a class="switchTo1-2" href="#"><img src="img/switcher/1.2.png"   alt="" /></a><hr/>
+
+<a class="switchTo2" href="#"><img src="img/switcher/2.png"   alt="" /></a><a class="switchTo3" href="#"><img src="img/switcher/3.png"   alt="" /></a><a class="switchTo4" href="#"><img src="img/switcher/4.png"   alt="" /></a><a class="switchTo5" href="#"><img src="img/switcher/5.png"   alt="" /></a><a class="switchTo6" href="#"><img src="img/switcher/6.png"   alt="" /></a>
+<hr />
+
+<a href="../index.html"><img src="img/switcher/default.png"   alt="" /></a><a href="../fluid/index.html"><img src="img/switcher/fluid.png"   alt="" /></a><a href="index.html"><img src="img/switcher/fixed.png"   alt="" /></a>
+
+</div>
+<script type="text/javascript" src="js/pure-jquery-style-switcher.js"></script>
+<!-- End of picker -->
+
+</body>
+</html>

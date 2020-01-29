@@ -1,0 +1,42 @@
+{
+  "name": "latena-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://victoratdigipar@bitbucket.org/digipar/latena-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/digipar/latena-app#readme",
+  "dependencies": {
+    "@flowjs/ng-flow": "^2.7.8",
+    "alasql": "^0.4.0",
+    "angular": "^1.7.9",
+    "angular-formly": "^8.4.1",
+    "angular-formly-templates-bootstrap": "^6.5.1",
+    "angular-sanitize": "^1.7.9",
+    "angular-toastr": "^2.1.1",
+    "angular-ui-bootstrap": "^2.5.6",
+    "angular-ui-grid": "^4.8.3",
+    "angular-ui-router": "^1.0.24",
+    "api-check": "^7.5.5",
+    "bootstrap": "^4.4.1",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^1.9.1",
+    "moment": "^2.24.0",
+    "ng-flow": "^2.1.4",
+    "nodemon": "^2.0.2",
+    "pdfmake": "^0.1.63",
+    "popper.js": "^1.16.1",
+    "select2": "^4.0.12",
+    "ui-select": "^0.19.8",
+    "xlsx": "^0.14.0"
+  }
+}

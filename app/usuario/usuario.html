@@ -1,0 +1,53 @@
+</div>
+    <div>
+        <br />
+        <h3>Usarios</h3>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-right">
+            <a ui-sref="usuario-registrar">
+                <button class="btn btn-primary" type="button">Registrar</button>
+            </a>
+        </div>
+    </div>
+    <br />
+    <table class="table table-hover table-sm table-excel table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Email</th>   
+                <th>Rol</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-if="!vm.usuarios.length && !vm.dataLoading">
+                <td colspan="7">Sin registros</td>
+            </tr>
+            <tr ng-if="vm.dataLoading">
+                <td colspan="7">
+                    <span><i class="fa fa-circle-notch fa-spin"></i>Cargando..</span>
+                </td>
+            </tr>
+            <tr ng-repeat="u in vm.usuarios">
+                <td>{{u.userId}}</td>
+                <td>{{u.username}}</td>
+                <td>{{u.email}}</td>
+                <td>{{u.rolDesc}}</td>
+                <td>
+                    <div class="btn-group" uib-dropdown is-open="status.isopen">
+                        <button id="single-button" type="button" class="btn btn-sm btn-secondary" uib-dropdown-toggle ng-disabled="disabled">
+                            Acciones <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-right" uib-dropdown-menu role="menu" aria-labelledby="single-button">
+                            <li><a ui-sref="usuario-editar({ id: u.userId })" style="margin-left: 10px; margin-right: 10px" >Editar</a></li>
+                            <!-- <li ng-show="u.appuserEstadoDesc == 'DESACTIVADO' ? true: false"><a href ng-click="vm.cambiarEstado(u.appuserId, 'aprobar')" style="margin-left: 10px; margin-right: 10px;">Activar</a></li>
+                            <li ng-show="u.appuserEstadoDesc == 'ACTIVO' ? true: false"><a href ng-click="vm.cambiarEstado(u.appuserId, 'anular')" style="margin-left: 10px; margin-right: 10px">Desactivar</a></li> -->
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+<div>

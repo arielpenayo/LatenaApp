@@ -1,0 +1,123 @@
+.dataTables_wrapper {position: relative;}
+.dataTables_wrapper .display th {background-color: #454A53; color: white;text-align: left;}
+.dataTables_wrapper .display th.sorting:hover {background-color: #555a63; cursor: pointer;}
+.dataTables_wrapper .display {margin-bottom: 10px; border-bottom: 1px solid #ddd;}
+
+.dataTables_wrapper .display th.check {padding-right: 10px;}
+
+
+.dataTables_length {
+	width: 50px;
+	float: left;
+}
+
+.dataTables_filter {
+	width: 155px;
+	float: right;
+}
+.dataTables_filter input {width: 70px!important;}
+.dataTables_info {
+	width: 12%;
+	min-width: 100px;
+	float: left;
+	font-size: 0.825em;
+	padding: 5px 0;
+}
+.dataTables_paginate {
+	width: 44px;
+	* width: 50px;
+	float: left;
+	padding: 5px 0;
+}
+
+
+.paging_full_numbers {
+	width: 65%;
+	height: 22px;
+	line-height: 22px;
+}
+
+.paging_full_numbers span.paginate_button,
+ 	.paging_full_numbers span.paginate_active {
+	cursor: pointer;
+	*cursor: hand;
+	float: left;
+}
+
+#tabled tbody tr.row_selected td {background: #fffbe3;border-bottom: 1px solid #f3e7a8;}
+
+span.paginate_button {
+	float: left;
+	display: block;
+	width: 13px;
+	height: 13px;
+	font-size: 0.825em;
+	}
+span.number {
+	font-size: 0.825em;	
+	padding: 1px 3px 5px 3px;
+	margin: 0 3px 0 3px;
+	height: 13px;
+	width: auto;
+	line-height: 11px;
+}
+span.paginate_button.first {background: url(../images/tablearrowsleft.png) no-repeat 0 0;}
+span.paginate_button.last {background: url(../images/tablearrowsright.png) no-repeat -13px 0;}
+
+span.paginate_button.previous {background: url(../images/tablearrowsleft.png) no-repeat -13px 0; border-right: 1px solid grey; padding-right: 7px;}
+span.paginate_button.next {background: url(../images/tablearrowsright.png) no-repeat 7px 0; border-left: 1px solid grey; padding-left: 7px;}
+
+span.paginate_button.last:hover, span.paginate_button.previous:hover {background-position: -13px -13px;}
+span.paginate_button.first:hover {background-position: 0 -13px;} span.paginate_button.next:hover {background-position: 7px -13px;}
+
+span.paginate_active {font-weight: bold;}
+
+
+body .entry #tabled_filter label {font-size: 0.825em; vertical-align: middle; width: 151px;}
+body .entry label {padding: 0;}
+#tabled_filter input, #tabled_length select, #tabled td input {
+	background: none repeat scroll 0 0 #EFEFEF;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 10px;
+    padding: 3px;}
+#tabled td input {padding: 2px 3px;}
+#tabled td.readonly input {border: 0; padding: 0;} 
+
+#tabled_length select {padding: 2px;border: 1px solid #efefef;}
+body .dataTables_wrapper label {width: auto; float: none}
+#tabled tr {border-bottom: 1px solid #ddd;}
+
+
+.sorting_asc {
+	background: #454A53 url('../../img/main_sort_asc.png') no-repeat 5px center;
+}
+.sorting_desc {
+	background: #454A53 url('../../img/main_sort_desc.png') no-repeat 5px center;
+}
+.sorting {
+	background: #454A53 url('../../img/main_sort_both.png') no-repeat 5px center;
+}
+.sorting_asc_disabled {
+	background: #454A53 url('../../img/main_sort_asc_disabled.png') no-repeat 5px center;
+}
+.sorting_desc_disabled {
+	background: #454A53 url('../../img/main_sort_desc_disabled.png') no-repeat 5px center;
+}
+#tabled .sorting, #tabled .sorting_asc, #tabled .sorting_desc, #tabled .sorting_asc_disabled, #tabled .sorting_desc_disabled {padding-left: 23px;}
+.dataTables_scroll {
+	clear: both;
+}
+
+
+
+td.details {
+	background-color: #d1cfd0;
+	border: 2px solid #A19B9E;
+}
+#tabled td.tcontrols {
+	width: 10px;
+	padding: 5px;
+}
+#tabled th {font-size: 0.825em;}
+#tabled th.tview, #tabled th.tdelete, #tabled th.tedit {font-size: 0.825em; padding: 2px 10px 2px 0; width: 30px;}

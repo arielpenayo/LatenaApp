@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="latena">
+  <head>
+    <meta charset="utf-8">
+    <title>LATENA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/custom.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="node_modules/angular-toastr/dist/angular-toastr.min.css"/>
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js'></!--> 
+    <!-- <link rel="stylesheet" href="../assets/css/custom.min.css"> -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+      <script src="../bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="node_modules/angular-toastr/dist/angular-toastr.tpls.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="node_modules/angular-ui-grid/ui-grid.css" />
+    <script src="node_modules/angular-ui-grid/ui-grid.js"></script>
+    <script src="node_modules/angular-ui-grid/ui-grid.exporter.min.js"></script>
+    <script src="node_modules/angular-ui-grid/ui-grid.selection.min.js"></script>
+    <script src="node_modules/api-check/dist/api-check.min.js"></script>
+    <script src="node_modules/angular-formly/dist/formly.min.js"></script>
+    <script src="node_modules/angular-formly-templates-bootstrap/dist/angular-formly-templates-bootstrap.min.js"></script>
+    <script src="node_modules/moment/min/moment.min.js"></script>
+    <script src="node_modules/pdfmake/build/pdfmake.js"></script>
+    <script src="node_modules/pdfmake/build/vfs_fonts.js"></script>
+    <script src="node_modules/ui-select/dist/select.min.js"></script>
+    <script src="node_modules/alasql/dist/alasql.min.js"></script>
+    <script src="node_modules/xlsx/dist/xlsx.core.min.js"></script>
+    <script src="node_modules/@flowjs/ng-flow/dist/ng-flow-standalone.js"></script>
+    <link rel="stylesheet" type="text/css" href="node_modules/ui-select/dist/select.min.css" />    
+    <link rel="stylesheet" type="text/css" href="node_modules/select2/dist/css/select2.min.css" />    
+    <script src="node_modules/angular-sanitize/angular-sanitize.min.js"></script>
+    <style>
+      .select2-container {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">LATENA</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li> <a href ui-sref="reports">Trayecto</a></li>
+                <li><a href ui-sref="usuario">Usuarios</a></li>
+                
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">      
+      <ui-view></ui-view>
+    </div>
+
+    <script type="text/ng-template" id="ui-select-single.html">
+  <ui-select data-ng-model="model[options.key]" data-required="{{to.required}}" data-disabled="{{formState.readOnly==true ? '1' : ''}}" theme="bootstrap">
+        <ui-select-match placeholder="{{to.placeholder}}" data-allow-clear="!formState.readOnly">{{$select.selected[to.labelProp]}}</ui-select-match>
+        <ui-select-choices data-repeat="option[to.valueProp] as option in to.options | filter: $select.search">
+          <div ng-bind-html="option[to.labelProp] | highlight: $select.search"></div>
+        </ui-select-choices>
+      </ui-select>
+    </script>
+    
+  </body>
+  <!-- controladores -->
+  <script src="app/app.js"></script>
+  <script src="env.js"></script>
+  <script src="app/config.js"></script>
+  <script src="app/routes.js"></script>
+  <script src="app/dataService.js"></script>
+  <script src="app/reports/reportsCtrl.js"></script>
+  <script src="app/reports/reportsFormCtrl.js"></script>
+  <script src="app/usuario/usuarioCtrl.js"></script>
+  <script src="app/usuario/usuarioFormCtrl.js"></script>
+  <script src="app/login/loginCtrl.js"></script>
+
+</html>

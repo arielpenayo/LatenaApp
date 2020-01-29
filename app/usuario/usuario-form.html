@@ -1,0 +1,14 @@
+<div>
+    <br />
+    <h4><span ng-show="vm.editMode">Editar Usuario {{vm.usuario.username}}</span><span ng-show="vm.hide && !vm.editMode">Registrar Usuario</span></h4>
+    <div class="row">
+        <div class="col-md-12">
+            <form ng-submit="vm.grabar(vm.usuario)" novalidate name="vm.usuarioForm">
+                <formly-form model="vm.usuario" fields="vm.usuarioFields" options="vm.options" novalidate>
+                    <button type="submit" ng-disabled="vm.usuarioForm.$invalid || vm.dataSaving" class="btn btn-primary submit-button"><span ng-show="vm.editMode">Aceptar</span><span ng-show="vm.hide && !vm.editMode">Grabar</span></button>
+                    <button class="btn btn-primary" type="button" ng-click="vm.cancelar()"><span>Cancelar</span></button>
+                </formly-form>
+            </form>
+        </div>
+    </div>
+</div>

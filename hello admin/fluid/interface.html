@@ -1,0 +1,610 @@
+<!doctype html>
+
+<!-- 
+320 and Up boilerplate extension
+Andy Clarke http://about.me/malarkey
+Keith Clark http://twitter.com/keithclarkcouk
+Version: 2
+URL: http://stuffandnonsense.co.uk/projects/320andup/
+License: http://creativecommons.org/licenses/MIT
+-->
+
+<!--[if IEMobile 7]><html class="no-js iem7 oldie"><![endif]-->
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+
+<title>HelloAdmin</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/colors/color1/color.css">
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/grid.css">
+<link rel="stylesheet" media="print" href="css/print.css">
+<link rel="stylesheet" href="css/fluid.css">
+
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<script src="js/libs/selectivizr-min.js"></script>
+<![endif]-->
+
+<!-- JavaScript -->
+<script src="js/libs/modernizr-2.0.6.min.js"></script>
+
+<!-- For iPhone 4 -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
+<!-- For iPad 1-->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
+<!-- For iPhone 3G, iPod Touch and Android -->
+<link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
+<!-- For Nokia -->
+<link rel="shortcut icon" href="img/l/apple-touch-icon.png">
+<!-- For everything else -->
+<link rel="shortcut icon" href="/favicon.ico">
+
+<!--iOS. Delete if not required -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-startup-image" href="img/splash.png">
+
+<!--Microsoft. Delete if not required -->
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!--[if lt IE 7 ]><script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script><script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script><![endif]-->
+
+<!-- http://t.co/y1jPVnT -->
+<link rel="canonical" href="/">
+</head>
+
+<body class="clearfix">
+
+<header>
+	<section class="container_12"><!-- / Using 960's grid container_12 to standartize paddings/margins -->
+			<div class="upper clearfix">
+				<!-- / Logo -->
+				<a href="dashboard.html" class="logo mt20"><img src="img/hdr_logo.png" alt="" /></a>
+				<!-- / End logo -->
+
+				<!-- / Language and search -->
+				<div class="r top">
+					<!-- / Language  -->
+					<ul class="lang sf_menu clearfix"><!-- / Please note that these LI elements are right floated to keep the fluid layout consistent  -->
+						<li class="last"><a href="#"><img src="img/icons/question.png" alt="" /></a></li>
+						<li><a href="#">English</a>
+							<ul>
+								<li><a href="#">German</a></li>
+								<li class="last"><a href="#">Bulgarian</a></li>
+							</ul>
+						</li>
+					</ul>
+					<!-- / End language  -->
+					<!-- / Search  -->
+					<div class="search">
+					<form action="search.php">
+						<input type="text" placeholder="Search database..." >
+						<button></button>
+					</form>
+					</div>
+					<!-- / End search input -->
+				</div>
+				<div class="clear">&nbsp;</div>
+				<!-- / End slanguage and search -->
+				
+				<!-- / Userbar - separated from the main nav to fall back in mobile design. -->
+				<div class="r usermenu">
+					<ul class="sf_menu clearfix">
+						<li class="last"><a href="#" class="messages"><img src="img/icons/helloadmin/messages.png" alt="" /><sup>5</sup></a></li>
+						<li><a href="#"><img src="img/icons/helloadmin/user.png" alt="" /><span>Username</span></a>
+							<ul>
+								<li><a href="#">Preferences</a></li>
+								<li><a href="#">Your account</a></li>
+								<li class="last"><a href="#">Other options</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- / End userbar -->
+
+				<!-- / Main navigation-->
+				<nav class="mainnav l">
+					<ul id="mainnav" class="sf_menu clearfix">
+						<li><a href="dashboard.html" title="Link title here"><img src="img/icons/helloadmin/dashboard.png" alt="" /><span>Dashboard</span></a></li>
+						<li><a href="#" title="Link title here"><img src="img/icons/helloadmin/layouts.png" alt="" /><span>Layouts</span></a>
+							<ul>
+								<li><a href="layout1.html">2 columns – 1:2 </a></li>
+								<li><a href="layout2.html">2 columns – 2:1 </a></li>
+								<li><a href="layout3.html">1 column </a></li>
+								<li><a href="layout4.html">Left menu + 1 column</a></li>
+								<li><a href="layout5.html">1 column + Left menu</a></li>
+								<li><a href="layout6.html">Left menu + 3 boxes </a></li>
+								<li class="last"><a href="layout7.html">4 boxes </a></li>
+							</ul>
+						</li>
+						<li><a href="#" title="Link title here"><img src="img/icons/helloadmin/modules.png" alt="" /><span>Modules</span></a>
+							<ul>
+								<li><a href="gallery.html">Gallery</a></li>
+								<li><a href="calendar.html">Calendar</a></li>
+								<li><a href="charts.html">Charts</a></li>
+								<li><a href="filemanager.html">File Manager</a></li>
+								<li class="last"><a href="contacts.html">Contacts</a></li>
+							</ul>
+						</li>
+						<li><a href="#" title="Link title here"><img src="img/icons/helloadmin/features.png" alt="" /><span>Features</span></a>
+							<ul>
+								<li><a href="tables.html">Tables</a></li>
+								<li><a href="forms.html">Forms</a></li>
+								<li><a href="icons.html">Icons, Buttons, Breadcrumbs</a></li>
+								<li><a href="interface.html">Interface elements</a></li>
+								<li><a href="typography.html">Typography</a></li>
+								<li class="last"><a href="#">Error pages</a>
+									<ul>
+										<li><a href="error1.html">403</a></li>
+										<li><a href="error2.html">404</a></li>
+										<li><a href="error3.html">405</a></li>
+										<li><a href="error4.html">500</a></li>
+										<li class="last"><a href="error5.html">503</a></li>
+									</ul>
+								</li>
+							</ul>	
+						</li>
+					</ul>
+				</nav>
+				<!-- / End main navigation-->
+			</div>
+	</section>
+</header>
+
+<!-- / Start main -->
+<div id="main" class="container_12 clearfix" role="main">
+
+	<!-- / Box -->
+	<div class="box twothirds">
+		<div class="boxheading clearfix"><h3>jQuery UI interface elements</h3><a class="move"></a></div>
+		<section>
+			<div class="row clearfix">
+				<h4>Progressbars</h4>
+				<div class="progressbar"></div>
+				<div class="progressbarwithvalue animated mt15"></div>
+				<div id="progressbarmoving" class="mt15"></div>
+				<code class="mt15 hint">div class="progressbar" or class="progressbarwithvalue animated"</code>
+			</div>
+			<div class="row clearfix">
+				<h4>Ajax loaders</h4>
+				<img src="img/ajax/ajax-loader.gif" alt="" class="middle" />
+				<img src="img/ajax/ajax-loader2.gif" alt="" class="middle" />
+				<img src="img/ajax/ajax-loader3.gif" alt="" class="middle" />
+				<img src="img/ajax/ajax-loader4.gif" alt="" class="middle" />
+				<img src="img/ajax/ajax-loader5.gif" alt="" class="middle" />
+				<img src="img/ajax/ajax-loader6.gif" alt="" class="middle" />
+				<img src="img/ajax/ajax-loader7.gif" alt="" class="middle" />
+				<img src="img/ajax/ajax-loader8.gif" alt="" class="middle" />
+				<img src="img/ajax/ajax-loader9.gif" alt="" class="middle" />
+				<img src="img/ajax/ajax-loader10.gif" alt="" class="middle" />
+			</div>
+			<div class="row clearfix grid_6">
+				<h4>Datepicker</h4>
+					<input type="text" class="datepicker">
+					<h4 class="mt15 mobile_none">Inline datepicker</h4>
+					<div class="datepicker mt15 mobile_none"></div>
+					<code class="mt15 hint">div class="datepicker"</code>
+			</div>
+			<div class="row clearfix grid_6">
+				<h4>Color picker</h4>
+				<div class="relative"><input type="text" name="color1" class="colors" size="7" /></div>
+				<code class="mt15 hint">input class="colors" name="color1"</code>
+			</div>
+			
+			<div class="clear">&nbsp;</div>
+			<div class="row mt15 clearfix">
+				<h4>Simple slider</h4>
+				<div class="slider"></div>
+				<code class="mt15 hint">input class="slider"</code>
+			</div>
+			<div class="row mt15 clearfix">
+				<h4>Slider with increments</h4>
+				<label for="amount_increments" class="inline">Donation amount ($50 increments): <input type="text" id="amount_increments" class="inline clearest str" /></label>
+
+				<div class="slider_increments"></div>
+				<code class="mt15 hint">input class="slider_increments"</code>
+			</div>
+			<div class="row mt15 clearfix">
+				<h4>Slider with range</h4>
+				<label for="amount_range">Price range: <input type="text" id="amount_range" class="clearest str" /></label>
+				<div class="slider_range"></div>
+				<code class="mt15 hint">input class="slider_range"</code>
+			</div>
+			<div class="row mt15 clearfix">
+				<h4>Range with minimum</h4>
+				<label for="amount_range_min">Price range: <input type="text" id="amount_range_min" class="clearest str" /></label>
+				<div class="slider_range_min"></div>
+				<code class="mt15 hint">input class="slider_range_min"</code>
+			</div>
+			<div class="row mt15 clearfix">
+				<h4>Range with maximum</h4>
+				<label for="amount_range_max">Price range: <input type="text" id="amount_range_max" class="clearest str" /></label>
+				<div class="slider_range_max"></div>
+				<code class="mt15 hint">input class="slider_range_max"</code>
+			</div>
+			<div class="row mt15 clearfix">
+				<h4>Equalizer</h4>
+				<div id="eq" class="clearfix">
+					<span>88</span>
+					<span>77</span>
+					<span>55</span>
+					<span>33</span>
+					<span>40</span>
+					<span>45</span>
+					<span>70</span>
+				</div>
+				<code class="mt15 hint">input id="eq"</code>
+			</div>
+	</section>
+	</div>
+	<!-- / End box -->
+
+	<!-- / Box -->
+	<div class="box onethird">
+		<div class="boxheading clearfix"><h3><img src="img/icons/fatcow-hosting-icons/32x32/chess_horse.png" alt="" />jQuery elements 2</h3><a class="move"></a></div>
+		<section>
+				<h4>Default jQuery notifications</h4>
+				<div class="notification green">
+					<p><img src="img/icons/success.png" alt="" />This is a success message.</p>
+					<a class="close hider"></a>
+				</div>
+				<div class="notification red mt15">
+					<p><img src="img/icons/error.png" alt="" />This is a error message.</p>
+					<a class="close hider"></a>
+				</div>
+				<div class="notification blue mt15">
+					<p><img src="img/icons/info.png" alt="" />This is a system message.</p>
+					<a class="close hider"></a>
+				</div>
+				<div class="notification yellow mt15">
+					<p><img src="img/icons/attention.png" alt="" />This is a notification.</p>
+					<a class="close hider"></a>
+				</div>
+				<div class="notification mt15">
+					<p><img width="16" src="img/icons/helloadminpack/16x16/02.png" alt="" />This is a regular notice.</p>
+					<a class="close hider"></a>
+				</div>
+				<div class="clear">&nbsp;</div>
+				<h4 class="mt15">jQuery UI Dialog</h4>
+					<a id="opener" class="btn_icon textright" href="#">
+					<span class="l title">Open Dialog</span>
+					</a>
+					<code class="hint mt15">a id="opener", dialog content is below trigger</code>
+				<div id="dialog" title="Basic dialog">
+					<p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+					<button class="btn yellow mrb15">Sample button</button>
+				</div>
+				<h4 class="mt15">jQuery UI Dialog with overlay</h4>
+					<a id="opener_overlay" class="btn_icon textright" href="#">
+					<span class="l title">Open Dialog</span>
+					</a>
+					<code class="hint mt15">a id="opener_overlay", dialog content is below trigger</code>
+				<div id="dialog_overlay" title="Basic dialog">
+					<p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+					<button class="btn red mrb15">Sample button</button>
+				</div>
+				<h4 class="mt15">Alert windows</h4>
+				<a class="btn small green alert_button mrb5">Alert window</a><a class="alert_button_confirm btn small yellow mrb5">Confirm window</a><a class="alert_button_prompt btn small blue mrb5">Prompt window</a>
+				<h4 class="mt15">Growl notifications</h4>
+				<a class="btn small mrb5" onClick="$.jGrowl('jGrowl Sample!');">Simple jGrowl</a><a class="btn small mrb5" onClick="$.jGrowl('jGrowl sticky!', { sticky: true });">Sticky</a><a class="btn small mrb5" onClick="$.jGrowl('jGrowl with header', { header: 'See the header' });">With header</a><a class="btn small mrb5" onClick="$.jGrowl('jGrowl message that will stay longer', { life: 12000 });">Longer timing</a>
+				<div class="clear">&nbsp;</div>
+				<code class="hint">See code for onClick triggers</code>
+
+				<h4 class="mt15">Tipsy tip windows</h4>
+				<a class="btn small mrb5" id="tipRight" title="Tipsy tip">Right</a>
+				<a class="btn small mrb5" id="tipLeft" title="Tipsy tip">Left</a>
+				<a class="btn small mrb5" id="tipTop" title="Tipsy tip">Top</a>
+				<a class="btn small mrb5" id="tipBottom" title="Tipsy tip">Bottom</a>
+
+				<div class="clear">&nbsp;</div>
+			<h4 class="mt15">Regular jQuery UI tabs</h4>
+			<div class="tabsjqui">
+				<ul>
+					<li><a href="#tabsjqui-1">First tab</a></li>
+					<li><a href="#tabsjqui-2">Second tab</a></li>
+					<li><a href="#tabsjqui-3">Third tab</a></li>
+				</ul>
+				<div id="tabsjqui-1">
+					<p>So assured, indeed, is the fact concerning the periodicalness of the sperm whale's resorting to given waters, that many hunters believe that, could he be closely observed and studied throughout the world; were the logs for one voyage of the entire whale fleet carefully collated, then the migrations of the sperm whale would be found to correspond in invariability to those of</p>
+				</div>
+				<div id="tabsjqui-2">
+					<p>Today, however, they were not playing.  Uncle Henry sat upon the doorstep and looked anxiously at the sky, which was even grayer than usual.  Dorothy stood in the door with Toto in her arms, and looked at the sky too.  Aunt Em was washing the dishes. From the far north they heard a low wail of the wind, and Uncle Henry and Dorothy</p>
+				</div>
+				<div id="tabsjqui-3">
+					<p>"My life has been so short that I really know nothing whatever.  I was only made day before yesterday.  What happened in the world before that time is all unknown to me.  Luckily, when the farmer made my head, one of the first things he did was to paint my ears, so that I heard what was going on.  There was</p>
+				</div>
+			</div>
+			<code class="hint mt15">div class="tabsjqui" + see jQuery UI original examples - <a href="http://jqueryui.com/demos/">http://jqueryui.com/demos/</a></code>
+
+			<h4 class="mt15">Regular jQuery accordion</h4>
+				<div class="accjqui">
+					<h3><a href="#">Section 1</a></h3>
+					<div>
+						<p>
+						So assured, indeed, is the fact concerning the periodicalness of the sperm whale's resorting to given waters, that many hunters believe that, could he be closely observed and studied throughout the world; were the logs for one voyage of the entire whale fleet carefully collated, then the migrations of the sperm whale would be found to correspond in invariability to those of
+						</p>
+					</div>
+					<h3><a href="#">Section 2</a></h3>
+					<div>
+						<p>
+						Today, however, they were not playing.  Uncle Henry sat upon the doorstep and looked anxiously at the sky, which was even grayer than usual.  Dorothy stood in the door with Toto in her arms, and looked at the sky too.  Aunt Em was washing the dishes. From the far north they heard a low wail of the wind, and Uncle Henry and Dorothy
+						</p>
+					</div>
+					<h3><a href="#">Section 3</a></h3>
+					<div>
+						<p>
+						So assured, indeed, is the fact concerning the periodicalness of the sperm whale's resorting to given waters, that many hunters believe that, could he be closely observed and studied throughout the world;
+						</p>
+						<ul>
+							<li>The first list item</li>
+							<li>The second list item</li>
+							<li>The third list item</li>
+						</ul>
+					</div>
+					<h3><a href="#">Section 4</a></h3>
+					<div>
+						<p>
+						Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+						et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+						faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+						mauris vel est.
+						</p>
+						<p>
+						Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+						Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+						inceptos himenaeos.
+						</p>
+					</div>
+				</div>
+				<code class="hint mt15">div class="accjqui" + see jQuery UI original examples - <a href="http://jqueryui.com/demos/">http://jqueryui.com/demos/</a></code>
+			<h4 class="mt15">jQuery tabs as a wizard:</h4>
+	            <div class="tabsjquistep">
+                    
+                    <ul>
+                        <li><a href="#tabsjquistep-1">First</a></li>
+                        <li><a href="#tabsjquistep-2">Second</a></li>
+                        <li><a href="#tabsjquistep-3">Third</a></li>
+                    </ul>
+                    <div id="tabsjquistep-1"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a id="tabnext" href="#">Link here</a></p></div>
+                    <div id="tabsjquistep-2"><p>Phasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet ornare, felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum bibendum.</p></div>
+        
+                    <div id="tabsjquistep-3"><p>Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi urna, interdum eget, sagittis et, consequat vestibulum, lacus. Mauris porttitor ullamcorper augue.</p></div>
+                <code class="hint mt15">div class="tabsjquistep"</code>
+		</section>
+	</div>
+	<!-- / End box -->
+
+	<!-- / Box -->
+	<div class="box twothirds">
+		<div class="boxheading clearfix"><h3>Alternative accordions</h3><a class="move"></a></div>
+		<section>
+		<h4>Collapsible accordion</h4>
+		<p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+		 <div class="coll">
+	            <h4 class="coll_heading" id="opened"><span>First</span></h4>
+	            <div class="coll_content"><p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p></div>
+	            <h4 class="coll_heading"><span>Second</span></h4>
+	            <div class="coll_content"><p>Phasellus mattis tincidunt nibh.Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p></div>
+	            <h4 class="coll_heading"><span>Third</span></h4>
+	            <div class="coll_content"><p>Nam dui erat, auctor a, dignissim quis.Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p></div>
+	    </div>
+	    <code class="hint mt15">div class="coll"</code>
+	    <h4 class="mt15">Classic accordion</h4>
+	    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+	    <div class="acc">
+	            <h4 class="acc_heading"><span>First tab</span></h4>
+	            <div class="acc_content"><p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p></div>
+	            <h4 class="acc_heading"><span>Second tab</span></h4>
+	            <div class="acc_content"><p>Phasellus mattis tincidunt nibh.Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p></div>
+	            <h4 class="acc_heading"><span>Third tab</span></h4>
+	            <div class="acc_content"><p>Nam dui erat, auctor a, dignissim quis.Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p></div>
+	    </div>
+	    <code class="hint mt15">div class="acc"</code>
+		</section>
+	</div>
+	<!-- / End box -->
+
+	<!-- / Box -->
+	<div class="box onethird">
+		<div class="boxheading clearfix"><h3>Alternative tabs</h3><a class="move"></a></div>
+		<section>
+		<div class="tabs upper"><!-- / Apply upper class to have the tabs attached to the top of the box -->
+			<ul class="clearfix">
+	            <li><a href="#tabs-1">First</a></li>
+	            <li><a href="#tabs-2">Second</a></li>
+	            <li><a href="#tabs-3">Third</a></li>
+	        </ul>
+	        <div class="tab" id="tabs-1"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+	        <div class="tab" id="tabs-2"><p>Phasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet ornare, felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum bibendum.</p></div>
+
+	        <div class="tab" id="tabs-3"><p>Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi urna, interdum eget, sagittis et, consequat vestibulum, lacus. Mauris porttitor ullamcorper augue.</p></div>
+		</div>
+		<code class="hint mt15">div class="tabs"</code>
+	</section>
+	</div>
+	<!-- / End box -->
+
+	<!-- / Box -->
+	<div class="box twothirds">
+		<div class="boxheading clearfix"><h3>Info Boxes</h3><a class="move"></a></div>
+		<section class="clearfix">
+				<h4>Square boxes</h4>
+				<a href="#" class="square mrb15"><!-- / Add .circle to .square to make the square full circle (only CSS3)-->
+					<span class="title"><img src="img/main_up.png" alt="" />5.755</span>
+					<span class="regular">Page views</span>
+					<span class="subtitle green">+25%</span>
+				</a>
+				<a href="#" class="square mrb15"><!-- / Add .circle to .square to make the square full circle (only CSS3)-->
+					<span class="title"><img src="img/main_down.png" alt="" />5.755</span>
+					<span class="regular">Page views</span>
+					<span class="subtitle red">+25%</span>
+				</a>
+				<a href="#" class="square mrb15"><!-- / Add .circle to .square to make the square full circle (only CSS3)-->
+					<span class="title"><img src="img/main_minus.png" alt="" />5.755</span>
+					<span class="regular">Page views</span>
+					<span class="subtitle">+25%</span>
+				</a>
+				<a href="#" class="square mrb15"><!-- / Add .circle to .square to make the square full circle (only CSS3)-->
+					<span class="title"><img src="img/main_up.png" alt="" />5.755</span>
+					<span class="regular">Page views</span>
+					<span class="subtitle green">+25%</span>
+				</a>
+				<div class="clear">&nbsp;</div>
+				<h4>Square boxes with added .circle (CSS3 only)</h4>
+				<a href="#" class="square circle mrb15"><!-- / Add .circle to .square to make the square full circle (only CSS3)-->
+					<span class="title"><img src="img/main_up.png" alt="" />5.755</span>
+					<span class="regular">Page views</span>
+					<span class="subtitle green">+25%</span>
+				</a>
+				<a href="#" class="square circle mrb15"><!-- / Add .circle to .square to make the square full circle (only CSS3)-->
+					<span class="title"><img src="img/main_down.png" alt="" />5.755</span>
+					<span class="regular">Page views</span>
+					<span class="subtitle red">+25%</span>
+				</a>
+				<a href="#" class="square circle mrb15"><!-- / Add .circle to .square to make the square full circle (only CSS3)-->
+					<span class="title"><img src="img/main_minus.png" alt="" />5.755</span>
+					<span class="regular">Page views</span>
+					<span class="subtitle">+25%</span>
+				</a>
+				<a href="#" class="square circle mrb15"><!-- / Add .circle to .square to make the square full circle (only CSS3)-->
+					<span class="title"><img src="img/main_minus.png" alt="" />5.755</span>
+					<span class="regular">Page views</span>
+					<span class="subtitle">+25%</span>
+				</a>
+		</section>
+	</div>
+	
+</div>
+<!-- / End main -->
+
+<!-- / Footer -->
+<footer role="contentinfo" class="clearfix">
+	<section class="container_12"><!-- / Using 960's grid container_12 to standartize paddings/margins -->
+		<div class="lower clearfix">
+			<nav class="mainnav l">
+				<ul id="mainnavftr" class="clearfix">
+					<li><a href="dashboard.html" title="Link title here"><img src="img/icons/helloadmin/dashboard.png" alt="" /></a></li>
+					<li><a href="layout1.html" title="Link title here"><img src="img/icons/helloadmin/layouts.png" alt="" /></a></li>
+					<li><a href="gallery.html" title="Link title here"><img src="img/icons/helloadmin/modules.png" alt="" /></a></li>
+					<li><a href="tables.html" title="Link title here"><img src="img/icons/helloadmin/features.png" alt="" /></a></li>
+				</ul>
+			</nav>
+			<a href="#" id="top" class="top">top</a>
+		</div>
+		<div class="smallest">
+			<div class="l">
+				© Copyright 2010 Your Company Name
+			</div>
+			<div class="r">
+				© Copyright 2010 Your Company Name
+			</div>
+		</div>
+	</section>
+</footer>
+<!-- / End footer -->
+
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.ui.spinner.js"></script><!-- Loading the spinner before jqueryui, because it's officially part of jQuery UI 1.9 and not compatible with 1.8 -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.collapsible.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.tipsy.js"></script>
+<script type="text/javascript" src="js/plugins/autoresize.jquery.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.autotab-1.1b.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.uniform.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui.multiselect.js"></script>
+<script type='text/javascript' src='js/plugins/fullcalendar/fullcalendar.min.js'></script>
+<script type="text/javascript" src="js/plugins/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.jBreadCrumb.1.1.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.jgrowl.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.alerts.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.miniColors.min.js"></script>
+
+<!-- / Loading WYSIWYG Editor, load it only when needed -->
+<script src="js/plugins/jquery.wysiwyg.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/plugins/controls/default.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/plugins/controls/wysiwyg.table.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/plugins/controls/wysiwyg.image.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/plugins/controls/wysiwyg.link.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/plugins/controls/wysiwyg.cssWrap.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- / We're loading flot scripts separately because not many pages will need it. -->
+<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="js/plugins/excanvas.js"></script><![endif]-->
+<script type='text/javascript' src='js/plugins/jquery.flot.js'></script>
+<script type='text/javascript' src='js/plugins/jquery.flot.pie.min.js'></script>
+<script type="text/javascript" src="js/plugins/jflot.scripts.js"></script>
+
+<!-- These are for blueimp -->
+<script src="blueimp/tmpl.min.js"></script>
+<script src="blueimp/load-image.min.js"></script>
+<script src="blueimp/jquery.iframe-transport.js"></script>
+<script src="blueimp/jquery.fileupload.js"></script>
+<script src="blueimp/jquery.fileupload-ui.js"></script>
+<script src="blueimp/application.js"></script>
+<!-- The XDomainRequest Transport is included for cross-domain file deletion for IE >= 8 -->
+<script src="blueimp/jquery.xdr-transport.js"></script>
+<!-- End blueimp -->
+
+<script type="text/javascript" src="js/plugins/hoverIntent.js"></script>
+<script type="text/javascript" src="js/plugins/superfish.js"></script>
+
+<script src="js/plugins.js"></script>
+<script src="js/script.js"></script>
+<script src="js/mylibs/helper.js"></script>
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<script src="js/libs/imgsizer.js"></script>
+<![endif]-->
+
+<script>
+// iOS scale bug fix
+MBP.scaleFix();
+
+// Respond.js
+yepnope({
+	test : Modernizr.mq('(only all)'),
+	nope : ['js/libs/respond.min.js']
+});
+</script>
+
+<!-- http://mths.be/aab -->
+<script>
+var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
+(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<!-- This is the picker, remove it when you use this template -->
+<div class="colorswitcher"><a class="switchTo1" href="#"><img src="img/switcher/1.png"   alt="" /></a><a class="switchTo1-1" href="#"><img src="img/switcher/1.1.png"   alt="" /></a><a class="switchTo1-2" href="#"><img src="img/switcher/1.2.png"   alt="" /></a><hr/>
+
+<a class="switchTo2" href="#"><img src="img/switcher/2.png"   alt="" /></a><a class="switchTo3" href="#"><img src="img/switcher/3.png"   alt="" /></a><a class="switchTo4" href="#"><img src="img/switcher/4.png"   alt="" /></a><a class="switchTo5" href="#"><img src="img/switcher/5.png"   alt="" /></a><a class="switchTo6" href="#"><img src="img/switcher/6.png"   alt="" /></a>
+<hr />
+
+<a href="../index.html"><img src="img/switcher/default.png"   alt="" /></a><a href="index.html"><img src="img/switcher/fluid.png"   alt="" /></a><a href="../fixed/index.html"><img src="img/switcher/fixed.png"   alt="" /></a>
+
+</div>
+<script type="text/javascript" src="js/pure-jquery-style-switcher.js"></script>
+<!-- End of picker -->
+
+</body>
+</html>

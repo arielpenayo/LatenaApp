@@ -1,0 +1,322 @@
+<!doctype html>
+
+<!-- 
+320 and Up boilerplate extension
+Andy Clarke http://about.me/malarkey
+Keith Clark http://twitter.com/keithclarkcouk
+Version: 2
+URL: http://stuffandnonsense.co.uk/projects/320andup/
+License: http://creativecommons.org/licenses/MIT
+-->
+
+<!--[if IEMobile 7]><html class="no-js iem7 oldie"><![endif]-->
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+
+<title>HelloAdmin</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/colors/color1/color.css">
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/grid.css">
+<link rel="stylesheet" media="print" href="css/print.css">
+<link rel="stylesheet" href="css/fixed.css">
+
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<script src="js/libs/selectivizr-min.js"></script>
+<![endif]-->
+
+<!-- JavaScript -->
+<script src="js/libs/modernizr-2.0.6.min.js"></script>
+
+<!-- For iPhone 4 -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
+<!-- For iPad 1-->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
+<!-- For iPhone 3G, iPod Touch and Android -->
+<link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
+<!-- For Nokia -->
+<link rel="shortcut icon" href="img/l/apple-touch-icon.png">
+<!-- For everything else -->
+<link rel="shortcut icon" href="/favicon.ico">
+
+<!--iOS. Delete if not required -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-startup-image" href="img/splash.png">
+
+<!--Microsoft. Delete if not required -->
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!--[if lt IE 7 ]><script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script><script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script><![endif]-->
+
+<!-- http://t.co/y1jPVnT -->
+<link rel="canonical" href="/">
+</head>
+
+<body class="clearfix">
+
+<header>
+	<section class="container_12"><!-- / Using 960's grid container_12 to standartize paddings/margins -->
+			<div class="upper clearfix">
+				<!-- / Logo -->
+				<a href="dashboard.html" class="logo mt20"><img src="img/hdr_logo.png" alt="" /></a>
+				<!-- / End logo -->
+
+				<!-- / Language and search -->
+				<div class="r top">
+					<!-- / Language  -->
+					<ul class="lang sf_menu clearfix"><!-- / Please note that these LI elements are right floated to keep the fluid layout consistent  -->
+						<li class="last"><a href="#"><img src="img/icons/question.png" alt="" /></a></li>
+						<li><a href="#">English</a>
+							<ul>
+								<li><a href="#">German</a></li>
+								<li class="last"><a href="#">Bulgarian</a></li>
+							</ul>
+						</li>
+					</ul>
+					<!-- / End language  -->
+					<!-- / Search  -->
+					<div class="search">
+					<form action="search.php">
+						<input type="text" placeholder="Search database..." >
+						<button></button>
+					</form>
+					</div>
+					<!-- / End search input -->
+				</div>
+				<div class="clear">&nbsp;</div>
+				<!-- / End slanguage and search -->
+				
+				<!-- / Userbar - separated from the main nav to fall back in mobile design. -->
+				<div class="r usermenu">
+					<ul class="sf_menu clearfix">
+						<li class="last"><a href="#" class="messages"><img src="img/icons/helloadmin/messages.png" alt="" /><sup>5</sup></a></li>
+						<li><a href="#"><img src="img/icons/helloadmin/user.png" alt="" /><span>Username</span></a>
+							<ul>
+								<li><a href="#">Preferences</a></li>
+								<li><a href="#">Your account</a></li>
+								<li class="last"><a href="#">Other options</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- / End userbar -->
+
+				<!-- / Main navigation-->
+				<nav class="mainnav l">
+					<ul id="mainnav" class="sf_menu clearfix">
+						<li><a href="dashboard.html" title="Link title here"><img src="img/icons/helloadmin/dashboard.png" alt="" /><span>Dashboard</span></a></li>
+						<li><a href="#" title="Link title here"><img src="img/icons/helloadmin/layouts.png" alt="" /><span>Layouts</span></a>
+							<ul>
+								<li><a href="layout1.html">2 columns – 1:2 </a></li>
+								<li><a href="layout2.html">2 columns – 2:1 </a></li>
+								<li><a href="layout3.html">1 column </a></li>
+								<li><a href="layout4.html">Left menu + 1 column</a></li>
+								<li><a href="layout5.html">1 column + Left menu</a></li>
+								<li><a href="layout6.html">Left menu + 3 boxes </a></li>
+								<li class="last"><a href="layout7.html">4 boxes </a></li>
+							</ul>
+						</li>
+						<li><a href="#" title="Link title here"><img src="img/icons/helloadmin/modules.png" alt="" /><span>Modules</span></a>
+							<ul>
+								<li><a href="gallery.html">Gallery</a></li>
+								<li><a href="calendar.html">Calendar</a></li>
+								<li><a href="charts.html">Charts</a></li>
+								<li><a href="filemanager.html">File Manager</a></li>
+								<li class="last"><a href="contacts.html">Contacts</a></li>
+							</ul>
+						</li>
+						<li><a href="#" title="Link title here"><img src="img/icons/helloadmin/features.png" alt="" /><span>Features</span></a>
+							<ul>
+								<li><a href="tables.html">Tables</a></li>
+								<li><a href="forms.html">Forms</a></li>
+								<li><a href="icons.html">Icons, Buttons, Breadcrumbs</a></li>
+								<li><a href="interface.html">Interface elements</a></li>
+								<li><a href="typography.html">Typography</a></li>
+								<li class="last"><a href="#">Error pages</a>
+									<ul>
+										<li><a href="error1.html">403</a></li>
+										<li><a href="error2.html">404</a></li>
+										<li><a href="error3.html">405</a></li>
+										<li><a href="error4.html">500</a></li>
+										<li class="last"><a href="error5.html">503</a></li>
+									</ul>
+								</li>
+							</ul>	
+						</li>
+					</ul>
+				</nav>
+				<!-- / End main navigation-->
+			</div>
+	</section>
+</header>
+
+<!-- / Start main -->
+<div id="main" class="container_12 clearfix" role="main">
+
+	<code class="hint">3 column layout turns into 4 column after screen width larger than 1440px</code>
+	<div class="clear">&nbsp;</div>
+
+	<!-- / Box -->
+	<div class="box onethird">
+	<div class="boxheading clearfix"><h3>Text formatting</h3><a class="move"></a></div>
+	<section class="clearfix">
+		<h2>All down Wellington</h2>
+		<p>"Queequeg," said I, when they had dragged me, the last man, to the deck, and I was still shaking myself in my jacket to fling off the water; "Queequeg, my fine friend, does this sort of thing often happen?" Without much emotion, though soaked through just like me, he gave me to understand that such things did often happen.</p>
+	</section>
+	</div>
+
+	<!-- / Box -->
+	<div class="box onethird">
+	<div class="boxheading clearfix"><h3>Text formatting</h3><a class="move"></a></div>
+	<section class="clearfix">
+		<h2>All down Wellington</h2>
+		<p>"Queequeg," said I, when they had dragged me, the last man, to the deck, and I was still shaking myself in my jacket to fling off the water; "Queequeg, my fine friend, does this sort of thing often happen?" Without much emotion, though soaked through just like me, he gave me to understand that such things did often happen. 	</p>
+	</section>
+	</div>
+
+	<!-- / Box -->
+	<div class="box onethird">
+	<div class="boxheading clearfix"><h3>Text formatting</h3><a class="move"></a></div>
+	<section class="clearfix">
+		<h2>All down Wellington</h2>
+		<p>"Queequeg," said I, when they had dragged me, the last man, to the deck, and I was still shaking myself in my jacket to fling off the water; "Queequeg, my fine friend, does this sort of thing often happen?" Without much emotion, though soaked through just like me, he gave me to understand that such things did often happen.</p>
+	</section>
+	</div>
+
+	<!-- / Box -->
+	<div class="box onethird">
+	<div class="boxheading clearfix"><h3>Text formatting</h3><a class="move"></a></div>
+	<section class="clearfix">
+		<h2>All down Wellington</h2>
+		<p>"Queequeg," said I, when they had dragged me, the last man, to the deck, and I was still shaking myself in my jacket to fling off the water; "Queequeg, my fine friend, does this sort of thing often happen?" Without much emotion, though soaked through just like me, he gave me to understand that such things did often happen.</p>
+	</section>
+	</div>
+	
+</div>
+<!-- / End main -->
+
+<!-- / Footer -->
+<footer role="contentinfo" class="clearfix">
+	<section class="container_12"><!-- / Using 960's grid container_12 to standartize paddings/margins -->
+		<div class="lower clearfix">
+			<nav class="mainnav l">
+				<ul id="mainnavftr" class="clearfix">
+					<li><a href="dashboard.html" title="Link title here"><img src="img/icons/helloadmin/dashboard.png" alt="" /></a></li>
+					<li><a href="layout1.html" title="Link title here"><img src="img/icons/helloadmin/layouts.png" alt="" /></a></li>
+					<li><a href="gallery.html" title="Link title here"><img src="img/icons/helloadmin/modules.png" alt="" /></a></li>
+					<li><a href="tables.html" title="Link title here"><img src="img/icons/helloadmin/features.png" alt="" /></a></li>
+				</ul>
+			</nav>
+			<a href="#" id="top" class="top">top</a>
+		</div>
+		<div class="smallest">
+			<div class="l">
+				© Copyright 2010 Your Company Name
+			</div>
+			<div class="r">
+				© Copyright 2010 Your Company Name
+			</div>
+		</div>
+	</section>
+</footer>
+<!-- / End footer -->
+
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.ui.spinner.js"></script><!-- Loading the spinner before jqueryui, because it's officially part of jQuery UI 1.9 and not compatible with 1.8 -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.collapsible.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.tipsy.js"></script>
+<script type="text/javascript" src="js/plugins/autoresize.jquery.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.autotab-1.1b.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.uniform.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui.multiselect.js"></script>
+<script type='text/javascript' src='js/plugins/fullcalendar/fullcalendar.min.js'></script>
+<script type="text/javascript" src="js/plugins/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.jBreadCrumb.1.1.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.dataTables.js"></script>
+<script type="text/javascript" src="filemanager/js/elfinder.min.js"></script>
+
+<!-- These are for blueimp -->
+<script src="blueimp/tmpl.min.js"></script>
+<script src="blueimp/load-image.min.js"></script>
+<script src="blueimp/jquery.iframe-transport.js"></script>
+<script src="blueimp/jquery.fileupload.js"></script>
+<script src="blueimp/jquery.fileupload-ui.js"></script>
+<script src="blueimp/application.js"></script>
+<!-- The XDomainRequest Transport is included for cross-domain file deletion for IE >= 8 -->
+<script src="blueimp/jquery.xdr-transport.js"></script>
+<!-- End blueimp -->
+
+<!-- / Loading WYSIWYG Editor, load it only when needed -->
+<script src="js/plugins/jquery.wysiwyg.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/plugins/controls/default.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/plugins/controls/wysiwyg.table.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/plugins/controls/wysiwyg.image.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/plugins/controls/wysiwyg.link.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/plugins/controls/wysiwyg.cssWrap.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript" src="js/plugins/hoverIntent.js"></script>
+<script type="text/javascript" src="js/plugins/superfish.js"></script>
+
+<script src="js/plugins.js"></script>
+<script src="js/script.js"></script>
+<script src="js/mylibs/helper.js"></script>
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<script src="js/libs/imgsizer.js"></script>
+<![endif]-->
+
+<script>
+// iOS scale bug fix
+MBP.scaleFix();
+
+// Respond.js
+yepnope({
+	test : Modernizr.mq('(only all)'),
+	nope : ['js/libs/respond.min.js']
+});
+</script>
+
+<!-- http://mths.be/aab -->
+<script>
+var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
+(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<!-- This is the picker, remove it when you use this template -->
+<div class="colorswitcher"><a class="switchTo1" href="#"><img src="img/switcher/1.png"   alt="" /></a><a class="switchTo1-1" href="#"><img src="img/switcher/1.1.png"   alt="" /></a><a class="switchTo1-2" href="#"><img src="img/switcher/1.2.png"   alt="" /></a><hr/>
+
+<a class="switchTo2" href="#"><img src="img/switcher/2.png"   alt="" /></a><a class="switchTo3" href="#"><img src="img/switcher/3.png"   alt="" /></a><a class="switchTo4" href="#"><img src="img/switcher/4.png"   alt="" /></a><a class="switchTo5" href="#"><img src="img/switcher/5.png"   alt="" /></a><a class="switchTo6" href="#"><img src="img/switcher/6.png"   alt="" /></a>
+<hr />
+
+<a href="../index.html"><img src="img/switcher/default.png"   alt="" /></a><a href="../fluid/index.html"><img src="img/switcher/fluid.png"   alt="" /></a><a href="index.html"><img src="img/switcher/fixed.png"   alt="" /></a>
+
+</div>
+<script type="text/javascript" src="js/pure-jquery-style-switcher.js"></script>
+<!-- End of picker -->
+
+</body>
+</html>

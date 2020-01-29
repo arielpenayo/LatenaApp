@@ -1,0 +1,17 @@
+/* General body styles */
+body {background: #ecf3f9;}
+
+/* Header backgrounds */
+header {background: url(headerbgr_S.png) no-repeat center 0;}
+header.mobile {background: #285188;}
+
+
+/* Search input */
+header .search {background: #285188; background: rgba(0,0,0, 0.2);}
+
+/* Content colors */
+.box .boxheading, .slider-content li.selected .title, .box.menu ul li.act a  {background: #285188; background-image: url(../../../img/gradient2.png); background-repeat: repeat-x; background-position: 50% 50%;border: 1px solid #212121;color: white;}
+.box .boxheading a, body #main .slider-content li.selected a.title{color: white;}
+
+/* Footer */
+footer {background: url(footerbgr_S.png) no-repeat center 0;}

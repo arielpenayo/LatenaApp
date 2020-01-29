@@ -1,0 +1,467 @@
+<!doctype html>
+
+<!-- 
+320 and Up boilerplate extension
+Andy Clarke http://about.me/malarkey
+Keith Clark http://twitter.com/keithclarkcouk
+Version: 2
+URL: http://stuffandnonsense.co.uk/projects/320andup/
+License: http://creativecommons.org/licenses/MIT
+-->
+
+<!--[if IEMobile 7]><html class="no-js iem7 oldie"><![endif]-->
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+
+<title>HelloAdmin</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/colors/color1/color.css">
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/grid.css">
+<link rel="stylesheet" media="print" href="css/print.css">
+<link rel="stylesheet" href="css/fluid.css">
+
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<script src="js/libs/selectivizr-min.js"></script>
+<![endif]-->
+
+<!-- JavaScript -->
+<script src="js/libs/modernizr-2.0.6.min.js"></script>
+
+<!-- For iPhone 4 -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
+<!-- For iPad 1-->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
+<!-- For iPhone 3G, iPod Touch and Android -->
+<link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
+<!-- For Nokia -->
+<link rel="shortcut icon" href="img/l/apple-touch-icon.png">
+<!-- For everything else -->
+<link rel="shortcut icon" href="/favicon.ico">
+
+<!--iOS. Delete if not required -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-startup-image" href="img/splash.png">
+
+<!--Microsoft. Delete if not required -->
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!--[if lt IE 7 ]><script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script><script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script><![endif]-->
+
+<!-- http://t.co/y1jPVnT -->
+<link rel="canonical" href="/">
+
+</head>
+
+<body class="clearfix">
+
+<header>
+	<section class="container_12"><!-- / Using 960's grid container_12 to standartize paddings/margins -->
+			<div class="upper clearfix">
+				<!-- / Logo -->
+				<a href="dashboard.html" class="logo mt20"><img src="img/hdr_logo.png" alt="" /></a>
+				<!-- / End logo -->
+
+				<!-- / Language and search -->
+				<div class="r top">
+					<!-- / Language  -->
+					<ul class="lang sf_menu clearfix"><!-- / Please note that these LI elements are right floated to keep the fluid layout consistent  -->
+						<li class="last"><a href="#"><img src="img/icons/question.png" alt="" /></a></li>
+						<li><a href="#">English</a>
+							<ul>
+								<li><a href="#">German</a></li>
+								<li class="last"><a href="#">Bulgarian</a></li>
+							</ul>
+						</li>
+					</ul>
+					<!-- / End language  -->
+					<!-- / Search  -->
+					<div class="search">
+					<form action="search.php">
+						<input type="text" placeholder="Search database..." >
+						<button></button>
+					</form>
+					</div>
+					<!-- / End search input -->
+				</div>
+				<div class="clear">&nbsp;</div>
+				<!-- / End slanguage and search -->
+				
+				<!-- / Userbar - separated from the main nav to fall back in mobile design. -->
+				<div class="r usermenu">
+					<ul class="sf_menu clearfix">
+						<li class="last"><a href="#" class="messages"><img src="img/icons/helloadmin/messages.png" alt="" /><sup>5</sup></a></li>
+						<li><a href="#"><img src="img/icons/helloadmin/user.png" alt="" /><span>Username</span></a>
+							<ul>
+								<li><a href="#">Preferences</a></li>
+								<li><a href="#">Your account</a></li>
+								<li class="last"><a href="#">Other options</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- / End userbar -->
+
+				<!-- / Main navigation-->
+				<nav class="mainnav l">
+					<ul id="mainnav" class="sf_menu clearfix">
+						<li><a href="dashboard.html" title="Link title here"><img src="img/icons/helloadmin/dashboard.png" alt="" /><span>Dashboard</span></a></li>
+						<li><a href="#" title="Link title here"><img src="img/icons/helloadmin/layouts.png" alt="" /><span>Layouts</span></a>
+							<ul>
+								<li><a href="layout1.html">2 columns – 1:2 </a></li>
+								<li><a href="layout2.html">2 columns – 2:1 </a></li>
+								<li><a href="layout3.html">1 column </a></li>
+								<li><a href="layout4.html">Left menu + 1 column</a></li>
+								<li><a href="layout5.html">1 column + Left menu</a></li>
+								<li><a href="layout6.html">Left menu + 3 boxes </a></li>
+								<li class="last"><a href="layout7.html">4 boxes </a></li>
+							</ul>
+						</li>
+						<li><a href="#" title="Link title here"><img src="img/icons/helloadmin/modules.png" alt="" /><span>Modules</span></a>
+							<ul>
+								<li><a href="gallery.html">Gallery</a></li>
+								<li><a href="calendar.html">Calendar</a></li>
+								<li><a href="charts.html">Charts</a></li>
+								<li><a href="filemanager.html">File Manager</a></li>
+								<li class="last"><a href="contacts.html">Contacts</a></li>
+							</ul>
+						</li>
+						<li><a href="#" title="Link title here"><img src="img/icons/helloadmin/features.png" alt="" /><span>Features</span></a>
+							<ul>
+								<li><a href="tables.html">Tables</a></li>
+								<li><a href="forms.html">Forms</a></li>
+								<li><a href="icons.html">Icons, Buttons, Breadcrumbs</a></li>
+								<li><a href="interface.html">Interface elements</a></li>
+								<li><a href="typography.html">Typography</a></li>
+								<li class="last"><a href="#">Error pages</a>
+									<ul>
+										<li><a href="error1.html">403</a></li>
+										<li><a href="error2.html">404</a></li>
+										<li><a href="error3.html">405</a></li>
+										<li><a href="error4.html">500</a></li>
+										<li class="last"><a href="error5.html">503</a></li>
+									</ul>
+								</li>
+							</ul>	
+						</li>
+					</ul>
+				</nav>
+				<!-- / End main navigation-->
+			</div>
+	</section>
+</header>
+
+<!-- / Start main -->
+<div id="main" class="container_12 clearfix" role="main">
+
+	<!-- / Box -->
+	<div class="box twothirds"> <!-- Simply add .r to a box if you want them to align to the right side of the grid -->
+		<div class="boxheading clearfix"><h3><img src="img/icons/fatcow-hosting-icons/32x32/chart_bar.png" alt="" />Latest statistics</h3><a class="move"></a></div>
+		<section>
+			<h4 class="mt15">Chart with interactive data points</h4>
+			<div id="chart" class="flot_chart" style="width:100%;height:300px;"></div>	
+		</section>
+	</div>
+
+	<!-- / Box -->
+	<div class="box onethird">
+		<div class="boxheading clearfix"><h3><img src="img/icons/fatcow-hosting-icons/32x32/chess_horse.png" alt="" />jQuery elements 2</h3><a class="move"></a></div>
+		<section>
+				<h4>Default jQuery notifications</h4>
+				<div class="notification green">
+					<p><img src="img/icons/success.png" alt="" />This is a success message.</p>
+					<a class="close hider"></a>
+				</div>
+				<div class="notification red mt15">
+					<p><img src="img/icons/error.png" alt="" />This is a error message.</p>
+					<a class="close hider"></a>
+				</div>
+				<div class="notification blue mt15">
+					<p><img src="img/icons/info.png" alt="" />This is a system message.</p>
+					<a class="close hider"></a>
+				</div>
+				<div class="notification yellow mt15">
+					<p><img src="img/icons/attention.png" alt="" />This is a notification.</p>
+					<a class="close hider"></a>
+				</div>
+				<div class="notification mt15">
+					<p><img width="16" src="img/icons/helloadminpack/16x16/02.png" alt="" />This is a regular notice.</p>
+					<a class="close hider"></a>
+				</div>
+				<div class="clear">&nbsp;</div>
+		</section>
+	</div>
+	<!-- / End box -->
+
+	<!-- / Box -->
+	<div class="box twothirds">
+		<div class="boxheading clearfix"><h3>Info Boxes</h3><a class="move"></a></div>
+		<section class="clearfix">
+				<h4>Square boxes</h4>
+				<a href="#" class="square mrb15"><!-- / Add .circle to .square to make the square full circle (only CSS3)-->
+					<span class="title"><img src="img/main_up.png" alt="" />5.755</span>
+					<span class="regular">Page views</span>
+					<span class="subtitle green">+25%</span>
+				</a>
+				<a href="#" class="square mrb15"><!-- / Add .circle to .square to make the square full circle (only CSS3)-->
+					<span class="title"><img src="img/main_down.png" alt="" />5.755</span>
+					<span class="regular">Page views</span>
+					<span class="subtitle red">+25%</span>
+				</a>
+				<a href="#" class="square mrb15"><!-- / Add .circle to .square to make the square full circle (only CSS3)-->
+					<span class="title"><img src="img/main_minus.png" alt="" />5.755</span>
+					<span class="regular">Page views</span>
+					<span class="subtitle">+25%</span>
+				</a>
+				<a href="#" class="square mrb15"><!-- / Add .circle to .square to make the square full circle (only CSS3)-->
+					<span class="title"><img src="img/main_up.png" alt="" />5.755</span>
+					<span class="regular">Page views</span>
+					<span class="subtitle green">+25%</span>
+				</a>
+				<div class="clear">&nbsp;</div>
+				<h4>Square boxes with added .circle (CSS3 only)</h4>
+				<a href="#" class="square circle mrb15"><!-- / Add .circle to .square to make the square full circle (only CSS3)-->
+					<span class="title"><img src="img/main_up.png" alt="" />5.755</span>
+					<span class="regular">Page views</span>
+					<span class="subtitle green">+25%</span>
+				</a>
+				<a href="#" class="square circle mrb15"><!-- / Add .circle to .square to make the square full circle (only CSS3)-->
+					<span class="title"><img src="img/main_down.png" alt="" />5.755</span>
+					<span class="regular">Page views</span>
+					<span class="subtitle red">+25%</span>
+				</a>
+				<a href="#" class="square circle mrb15"><!-- / Add .circle to .square to make the square full circle (only CSS3)-->
+					<span class="title"><img src="img/main_minus.png" alt="" />5.755</span>
+					<span class="regular">Page views</span>
+					<span class="subtitle">+25%</span>
+				</a>
+				<a href="#" class="square circle mrb15"><!-- / Add .circle to .square to make the square full circle (only CSS3)-->
+					<span class="title"><img src="img/main_minus.png" alt="" />5.755</span>
+					<span class="regular">Page views</span>
+					<span class="subtitle">+25%</span>
+				</a>
+		</section>
+	</div>
+
+	<!-- / Box -->
+	<div class="box onethird">
+		<div class="boxheading clearfix"><h3>Alternative tabs</h3><a class="move"></a></div>
+		<section>
+		<div class="tabs upper"><!-- / Apply upper class to have the tabs attached to the top of the box -->
+			<ul class="clearfix">
+	            <li><a href="#tabs-1">First</a></li>
+	            <li><a href="#tabs-2">Second</a></li>
+	            <li><a href="#tabs-3">Third</a></li>
+	        </ul>
+	        <div class="tab" id="tabs-1"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+	        <div class="tab" id="tabs-2"><p>Phasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet ornare, felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum bibendum.</p></div>
+
+	        <div class="tab" id="tabs-3"><p>Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi urna, interdum eget, sagittis et, consequat vestibulum, lacus. Mauris porttitor ullamcorper augue.</p></div>
+		</div>
+	</section>
+	</div>
+	<!-- / End box -->
+
+	<!-- / Box -->
+	<div class="box twothirds">
+		<div class="boxheading clearfix"><h3>Icons &amp; Buttons</h3><a class="move"></a></div>
+		<section class="clearfix">
+
+			<h4 class="">Icons only button 32x32</h4>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/32x32/09.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/32x32/10.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/32x32/11.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/32x32/12.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/32x32/13.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/32x32/14.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/32x32/15.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/32x32/16.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/32x32/01.png" alt="" /></a>
+			<h4 class="mt15">Icons only button 16x16</h4>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/16x16/09.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/16x16/10.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/16x16/11.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/16x16/12.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/16x16/13.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/16x16/14.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/16x16/15.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/16x16/16.png" alt="" /></a>
+			<a href="#" class="btn_icon mrb15"><img src="img/icons/helloadminpack/16x16/01.png" alt="" /></a>
+
+			<div class="clear">&nbsp;</div>
+
+			<h4 class="mt15">Icons with text buttons</h4>
+
+			<a href="#" class="btn_icon textright mrb15"><img src="img/icons/helloadminpack/32x32/01.png" alt="" />
+			<span class="l"><span class="title">Hello admin!</span><span class="subtitle">John Doe</span></span>
+			</a>
+			<a href="#" class="btn_icon textright mrb15"><img src="img/icons/helloadminpack/32x32/02.png" alt="" />
+			<span class="l"><span class="title">Hello admin!</span><span class="subtitle">John Doe</span></span>
+			</a>
+			<a href="#" class="btn_icon textright mrb15"><img src="img/icons/helloadminpack/32x32/03.png" alt="" />
+			<span class="l"><span class="title">Hello admin!</span><span class="subtitle">John Doe</span></span>
+			</a>
+			<a href="#" class="btn_icon textright mrb15"><img src="img/icons/helloadminpack/32x32/04.png" alt="" />
+			<span class="l"><span class="title">Hello admin!</span><span class="subtitle">John Doe</span></span>
+			</a>
+
+
+			<h4 class="mt15">Icons with single text buttons</h4>
+
+			<a href="#" class="btn_icon textright mrb15"><img src="img/icons/helloadminpack/16x16/05.png" alt="" width="16"/>
+			<span class="l title">Hello admin!</span>
+			</a>
+			<a href="#" class="btn_icon textright mrb15"><img src="img/icons/helloadminpack/16x16/06.png" alt="" width="16"/>
+			<span class="l title">Hello admin!</span>
+			</a>
+			<a href="#" class="btn_icon textright mrb15"><img src="img/icons/helloadminpack/16x16/07.png" alt="" width="16"/>
+			<span class="l title">Hello admin!</span>
+			</a>
+			<a href="#" class="btn_icon textright mrb15"><img src="img/icons/helloadminpack/16x16/08.png" alt="" width="16"/>
+			<span class="l title">Hello admin!</span>
+			</a>
+
+			<h4 class="mt15">Icons with text square buttons</h4>
+
+			<a href="#" class="btn_icon square mrb15"><img src="img/icons/helloadminpack/32x32/09.png" alt="" /><span>Hello admin!</span></a>
+			<a href="#" class="btn_icon square mrb15"><img src="img/icons/helloadminpack/32x32/10.png" alt="" /><span>Hello admin!</span></a>
+			<a href="#" class="btn_icon square mrb15"><img src="img/icons/helloadminpack/32x32/11.png" alt="" /><span>Hello admin!</span></a>
+			<a href="#" class="btn_icon square mrb15"><img src="img/icons/helloadminpack/32x32/12.png" alt="" /><span>Hello admin!</span></a>
+			<a href="#" class="btn_icon square mrb15"><img src="img/icons/helloadminpack/32x32/13.png" alt="" /><span>Hello admin!</span></a>
+
+			<h4 class="mt15">Buttons .btn</h4>
+			<a class="btn">default</a><a class="btn grey">default</a><a class="btn green mrb5">green</a><a class="btn red mrb5">red</a><a class="btn orange mrb5">orange</a><a class="btn yellow mrb5">yellow</a><a class="btn blue mrb5">blue</a>
+			<div class="clear">&nbsp;</div>
+			<h4 class="mt15">Buttons .btn.middle</h4>
+			<a class="btn middle mrb5">default</a><a class="btn middle grey mrb5">default</a><a class="btn middle green mrb5">green</a><a class="btn middle red mrb5">red</a><a class="btn middle orange mrb5">orange</a><a class="btn middle yellow mrb5">yellow</a><a class="btn middle blue mrb5">blue</a>
+			<div class="clear">&nbsp;</div>
+			<h4 class="mt15">Buttons .btn small </h4>
+			<a class="btn small mrb5">default</a><a class="btn small grey mrb5">default</a><a class="btn small green mrb5">green</a><a class="btn small red mrb5">red</a><a class="btn small orange mrb5">orange</a><a class="btn small yellow mrb5">yellow</a><a class="btn small blue mrb5">blue</a>
+			<div class="clear">&nbsp;</div>
+			<h4 class="mt15">Paging</h4>
+			<!-- / Paging -->
+			<div class="paging mt15 clearfix">
+				<div class="l"><a href="#">1</a><a href="#" class="active">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a><a href="#"></a><a href="#">7</a><a href="#">8</a><a href="#">9</a><a href="#">10</a></div>
+				<div class="r"><a href="#" class="next"></a><a href="#" class="prev"></a></div>
+			</div>
+			<!-- / End paging -->
+		</section>
+	</div>
+	<!-- / End box -->
+	
+</div>
+<!-- / End main -->
+
+<!-- / Footer -->
+<footer role="contentinfo" class="clearfix">
+	<section class="container_12"><!-- / Using 960's grid container_12 to standartize paddings/margins -->
+		<div class="lower clearfix">
+			<nav class="mainnav l">
+				<ul id="mainnav2" class="clearfix">
+					<li><a href="dashboard.html" title="Link title here"><img src="img/icons/helloadmin/dashboard.png" alt="" /></a></li>
+					<li><a href="layout1.html" title="Link title here"><img src="img/icons/helloadmin/layouts.png" alt="" /></a></li>
+					<li><a href="gallery.html" title="Link title here"><img src="img/icons/helloadmin/modules.png" alt="" /></a></li>
+					<li><a href="tables.html" title="Link title here"><img src="img/icons/helloadmin/features.png" alt="" /></a></li>
+				</ul>
+			</nav>
+			<a href="#" id="top" class="top">top</a>
+		</div>
+		<div class="smallest">
+			<div class="l">
+				© Copyright 2010 Your Company Name
+			</div>
+			<div class="r">
+				© Copyright 2010 Your Company Name
+			</div>
+		</div>
+	</section>
+</footer>
+<!-- / End footer -->
+
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.ui.spinner.js"></script><!-- Loading the spinner before jqueryui, because it's officially part of jQuery UI 1.9 and not compatible with 1.8 -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.collapsible.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.tipsy.js"></script>
+<script type="text/javascript" src="js/plugins/autoresize.jquery.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.autotab-1.1b.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.uniform.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui.multiselect.js"></script>
+<script type='text/javascript' src='js/plugins/fullcalendar/fullcalendar.min.js'></script>
+<script type="text/javascript" src="js/plugins/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.jBreadCrumb.1.1.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.dataTables.js"></script>
+<script type="text/javascript" src="filemanager/js/elfinder.min.js"></script>
+
+<!-- / We're loading flot scripts separately because not many pages will need it. -->
+<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="js/plugins/excanvas.js"></script><![endif]-->
+<script type='text/javascript' src='js/plugins/jquery.flot.js'></script>
+<script type='text/javascript' src='js/plugins/jquery.flot.pie.min.js'></script>
+<script type="text/javascript" src="js/plugins/jflot.scripts.js"></script>
+<script type="text/javascript" src="js/plugins/jquery.flot.resize.js"></script>
+
+<script type="text/javascript" src="js/plugins/hoverIntent.js"></script>
+<script type="text/javascript" src="js/plugins/superfish.js"></script>
+
+<script src="js/plugins.js"></script>
+<script src="js/script.js"></script>
+<script src="js/mylibs/helper.js"></script>
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<script src="js/libs/imgsizer.js"></script>
+<![endif]-->
+
+<script>
+// iOS scale bug fix
+MBP.scaleFix();
+
+// Respond.js
+yepnope({
+	test : Modernizr.mq('(only all)'),
+	nope : ['js/libs/respond.min.js']
+});
+</script>
+
+<!-- http://mths.be/aab -->
+<script>
+var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
+(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<!-- This is the picker, remove it when you use this template -->
+<div class="colorswitcher"><a class="switchTo1" href="#"><img src="img/switcher/1.png"  alt="" /></a><a class="switchTo1-1" href="#"><img src="img/switcher/1.1.png"  alt="" /></a><a class="switchTo1-2" href="#"><img src="img/switcher/1.2.png"  alt="" /></a><hr/>
+
+<a class="switchTo2" href="#"><img src="img/switcher/2.png"  alt="" /></a><a class="switchTo3" href="#"><img src="img/switcher/3.png"  alt="" /></a><a class="switchTo4" href="#"><img src="img/switcher/4.png"  alt="" /></a><a class="switchTo5" href="#"><img src="img/switcher/5.png"  alt="" /></a><a class="switchTo6" href="#"><img src="img/switcher/6.png"  alt="" /></a>
+<hr />
+
+<a href="../index.html"><img src="img/switcher/default.png"   alt="" /></a><a href="index.html"><img src="img/switcher/fluid.png"   alt="" /></a><a href="../fixed/index.html"><img src="img/switcher/fixed.png"   alt="" /></a>
+
+</div>
+<script type="text/javascript" src="js/pure-jquery-style-switcher.js"></script>
+<!-- End of picker -->
+
+</body>
+</html>
